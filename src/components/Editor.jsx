@@ -1,45 +1,45 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row'
+import Card from 'react-bootstrap/Card';
 
 export default function Editor({text, setText}) {
     return (
-      <Container style={styles.editor}>
-          <Row>
-              <h1 style={styles.title}>Editor</h1>
-          </Row>
-            <Row>
-                <Col>
-                    <textarea
-                        id="editor"
-                        style={styles.textArea}
-                        onChange={(e) => setText(e.target.value)}
-                        value={text}
-                    />
-                </Col>
-            </Row>
-      </Container>
+        <>
+            <Card bg={"dark"} style={styles.card}>
+                <Card.Header>
+                    <h1 style={styles.title}>Editor</h1>
+                </Card.Header>
+                <Card.Body>
+                    <Col>
+                      <textarea
+                          id="editor"
+                          style={styles.textArea}
+                          onChange={(e) => setText(e.target.value)}
+                          autoFocus={true}
+                          value={text}
+                          maxLength={100000}
+
+                      />
+                    </Col>
+                </Card.Body>
+            </Card>
+        </>
     );
 }
 
 const styles = {
-
-    editor: {
-        // width: '50%',
-        // height: '100%',
-        border: '1px solid #DFD0B8',
-        color: '#DFD0B8',
-        backgroundColor: '#3C5B6F',
+    card: {
+        height: '100%',
+        marginTop: '50px',
     },
     title: {
         textAlign: 'center',
-        color: 'black',
+        color: 'white',
     },
     textArea: {
         backgroundColor: 'white',
         width: '100%',
-        height: '100%',
+        height: '100vh',
     }
 }
