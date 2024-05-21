@@ -11,8 +11,10 @@ https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-dev
 
 ### Live Demo
 
-- @TODO: Add live demo link
-- @TODO: Add screenshot
+- https://nahuelcastro.github.io/markdown-previewer/
+- Screenshots:
+  ![img/markdown-previewer.png](img/markdown-previewer.png)
+  ![img/markdown-score.png](img/markdown-score.png)
 
 ### How to run
 
