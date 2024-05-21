@@ -1,6 +1,7 @@
 {
   "name": "markdown-previewer",
   "version": "0.1.0",
+  "homepage": "https://github.com/nahuelcastro/markdown-previewer",
   "private": true,
   "dependencies": {
     "@babel/eslint-parser": "^7.24.5",
@@ -15,6 +16,8 @@
     "uninstall": "^0.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "react-app-rewired": "^2.2.1"
   }
 }
