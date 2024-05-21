@@ -1,7 +1,7 @@
 {
   "name": "markdown-previewer",
   "version": "0.1.0",
-  "homepage": "https://github.com/nahuelcastro/markdown-previewer",
+  "homepage": "https://nahuelcastro.github.io/markdown-previewer/",
   "private": true,
   "dependencies": {
     "@babel/eslint-parser": "^7.24.5",
